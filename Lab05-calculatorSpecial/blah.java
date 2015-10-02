@@ -7,19 +7,19 @@
 
 import java.util.Scanner;
 
-public class calculatorSpecial {
+public class blah {
     public static void main(String[] args){
     Scanner myScanner = new Scanner(System.in);
-    System.out.println(" Shall we proceed? (press n or N to stop, press any key to continue) ");  // intial statement to contine or exit
+    System.out.println("Shall we proceed? (press n or N to stop, press any key to continue) ");  // intial statement to contine or exit
     String X = myScanner.next();
     
-    while((X= myScanner.next() !X.equals("n")) || (X= myScanner.next()) !X.equals("N")) { // while loop defines how to exit
+    while(!(X.equals("n") || X.equals("N"))) { // while loop defines how to exit
  
-    System.out.print(" Enter an integer to be operated on: ");  //ask for A
+    System.out.print("Enter an integer to be operated on: ");  //ask for A
     double first = myScanner.nextDouble();
-    System.out.print(" Enter a second integer that will be operating");  //ask for B
+    System.out.print("Enter a second integer that will be operating: ");  //ask for B
     double second = myScanner.nextDouble();
-    System.out.print(" Enter the operation");  //ask for what operation to perform
+    System.out.print("Enter the operation: ");  //ask for what operation to perform
     char Q = myScanner.next().charAt(0);  // we will scan for 4 specific chars, the operators, anything else will give invalid
     
      switch(Q){// start our switch statement, we will check what operation was stored in q and then display results when a switch is hit
@@ -27,10 +27,7 @@ public class calculatorSpecial {
           System.out.println("Addition of A and B"); // we have shown the case
           double Addition= first+second;    // operation
           System.out.println(" A+B= " +Addition+ " "); // print
-          
-
-
-     break;
+          break;
      case '-':
         System.out.println("Subtraction of A and B");  // case shown
         double Subtraction = first-second; // operation 
@@ -49,12 +46,13 @@ public class calculatorSpecial {
     default:
     System.out.println("Invalid Operator!");  // in case of trolls
     break;
+    }
+    //System.out.println("Enter an integer to be operated on: ");
+    System.out.println("Shall we proceed? (press n or N to stop, press any key to continue) ");
+    X = myScanner.next();
     
-    
-
 }
-}
-System.out.println(" You have exited the loop, goodbye ");  //ask for A
+System.out.println("You have exited the loop, goodbye ");  //ask for A
         
 }
 }

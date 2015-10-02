@@ -38,7 +38,6 @@ public class Arithmetic {
         double envelopeTrue= envelopePurchase*1.06;
         
         double TrueTotal= sockTrue+glassTrue+envelopeTrue; // used for true total of items with tax included
-        
         System.out.println("Item bought is Socks."); // begin printing what is being bought
         System.out.println("                               " );
         System.out.println("The number of socks being bought is   " +nSocks+ ".");
