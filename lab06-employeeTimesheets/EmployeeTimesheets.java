@@ -21,6 +21,8 @@ public class EmployeeTimesheets {
        for (int j=0; j<1; j++){ // compute pay loop runs once per employee
         System.out.println("How much he makin? ") ;
         pay= myScanner.nextDouble();
+        totalpay=0;
+        totalhours=0;
             for(int z=0; z<5; z++){  // days of week loop runs 5 times 
             System.out.println("how long he working? (enter 1 value for each day, Monday to Friday)");
             hours=myScanner.nextDouble();
